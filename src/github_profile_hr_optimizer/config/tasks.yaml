@@ -1,0 +1,29 @@
+---
+analyze_github_profile:
+  description: Provide a comprehensive analysis of {github_username}'s GitHub profile
+    based on standard GitHub best practices and HR expectations. Focus on common profile
+    elements like repository quality, contribution patterns, documentation practices,
+    and professional presentation that hiring managers typically evaluate.
+  expected_output: 'A detailed GitHub profile analysis report including: 1) Overall
+    profile assessment score (1-10), 2) Repository quality evaluation, 3) Contribution
+    pattern analysis, 4) Documentation and README quality review, 5) Code organization
+    and best practices assessment, 6) Professional presentation evaluation, 7) Collaboration
+    and teamwork indicators, 8) Key strengths identification, 9) Critical improvement
+    areas, 10) HR attractiveness assessment with actionable insights.'
+  agent: github_profile_analyzer
+generate_improvement_recommendations:
+  description: Based on the GitHub profile analysis, create a comprehensive improvement
+    strategy with specific, actionable recommendations to enhance {github_username}'s
+    positioning as a reliable candidate for HR teams. Prioritize recommendations by
+    impact and ease of implementation, ensuring they address the key areas that hiring
+    managers focus on during candidate evaluation.
+  expected_output: 'A detailed improvement action plan including: 1) Priority-ranked
+    improvement recommendations (High/Medium/Low priority), 2) Specific action steps
+    for each recommendation, 3) Timeline estimates for implementation, 4) Expected
+    impact on HR perception, 5) Profile optimization checklist, 6) Repository enhancement
+    strategies, 7) Professional branding improvements, 8) Contribution activity optimization
+    tips, 9) Documentation and communication improvements, 10) Long-term profile development
+    roadmap with measurable goals.'
+  agent: hr_focused_improvement_strategist
+  context:
+  - analyze_github_profile
